@@ -1,0 +1,1 @@
+REPLACEMENT_CHAR = "\ufffd"
