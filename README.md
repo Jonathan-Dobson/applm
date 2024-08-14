@@ -10,17 +10,22 @@ Please do not use it yet in production.
 
 This package was created August 13, 2024
 
-We have only tested this one code example here:
+## Install AppLM, Transformers, and MLX
+
+```shell
+pip install transformers mlx applm
+```
+
+## Generate
+
+This is just the first test. We have only tested this one code example so far.
 
 ```python
-from utils.load import load
-from utils.generate import generate
-import models.qwen2 as qwen2
-
+from applm.utils.load import load
+from applm.utils.generate import generate
+import applm.models.qwen2 as qwen2
 
 model_name = "mlx-community/Qwen2-0.5B"
-# model_name = "mlx-community/Meta-Llama-3.1-8B-Instruct-bf16"
-
 
 model, tokenizer = load(
     model_name,
@@ -39,7 +44,6 @@ for message in messages:
         input_text = message["content"]
         break
 
-
 response = generate(
     model,
     tokenizer,
@@ -54,9 +58,11 @@ response = generate(
 
 ```
 
-This working example is meant to showcase the direction we are working toward, however the next change we update will probably break it.
+This example will soon change.
 
-If you like this project, or want to see progress, or want to contribute, please feel free to engage with the repo on github.
+It is only meant to showcase the direction we are working toward. The next change to the `applm` package will probably break it.
+
+If you like what we are doing, want to watch our progress, or want to contribute, please feel free to engage with the repo on github.
 
 We are looking for contributors to help further develop this package.
 

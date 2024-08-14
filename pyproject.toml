@@ -1,6 +1,6 @@
 [project]
 authors = [
-  {name = "Jonathan Dobson", email = "author@example.com"},
+  {name = "Jonathan Dobson"},
 ]
 classifiers = [
   "Programming Language :: Python :: 3",
@@ -11,7 +11,7 @@ description = "Language Model Tools for Apple Silicon"
 name = "applm"
 readme = "README.md"
 requires-python = ">=3.8"
-version = "0.0.50"
+version = "0.0.51"
 
 [project.urls]
 Homepage = "https://github.com/Jonathan-Dobson/applm"
